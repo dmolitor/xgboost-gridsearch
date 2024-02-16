@@ -3,6 +3,16 @@
 This module allows you to combine grid-search tuning with early stopping via 
 cross validation.
 
+## Importing
+
+You can import this code from Github via the `httpimport` module as follows:
+```python
+import httpimport as hi
+
+with hi.github_repo("dmolitor", "xgboost-gridsearch", ref="main"):
+    from xgb_gridsearch.grid_search import GridSearch
+```
+
 ## Predicting proportion of working mothers with 1-year-olds
 
 Two important things to note. 
@@ -18,10 +28,13 @@ and here is the
 for `xgboost.cv`.
 
 ```python
+import httpimport as hi
 import json
 import pandas as pd
 import xgboost as xgb
-from xgb_gridsearch.grid_search import GridSearch
+
+with hi.github_repo("dmolitor", "xgboost-gridsearch", ref="main"):
+    from xgb_gridsearch.grid_search import GridSearch
 
 # Import data
 parents = pd.read_csv("https://raw.githubusercontent.com/info3370/info3370.github.io/main/data/parents.csv")
