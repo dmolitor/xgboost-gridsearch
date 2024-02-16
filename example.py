@@ -1,7 +1,10 @@
+import httpimport as hi
 import json
 import pandas as pd
 import xgboost as xgb
-from xgb_gridsearch.grid_search import GridSearch
+
+with hi.github_repo("dmolitor", "xgboost-gridsearch", ref="main"):
+    from xgb_gridsearch.grid_search import GridSearch
 
 # Test with data ----------------------------------------------------------
 
