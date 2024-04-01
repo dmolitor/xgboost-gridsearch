@@ -3,6 +3,12 @@
 This module allows you to combine grid-search tuning with early stopping via 
 cross validation.
 
+## Dependencies
+This requires the following dependencies:
+```python
+pip install pandas tqdm xgboost
+```
+
 ## Importing
 
 You can import this code from Github via the `httpimport` module as follows:
