@@ -1,6 +1,6 @@
 import pandas as pd
 from tqdm import tqdm
-from utils import expand_grid, validate_kwargs
+from .utils import expand_grid, validate_kwargs
 import xgboost as xgb
 
 class GridSearch:
