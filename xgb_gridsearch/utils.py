@@ -1,4 +1,4 @@
-from .exceptions import ArgumentValueError, ParameterFormatError
+from exceptions import ArgumentValueError, ParameterFormatError
 from itertools import product
 import pandas as pd
 from typing import Any
