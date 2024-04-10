@@ -6,7 +6,7 @@ cross validation.
 ## Dependencies
 This requires the following dependencies:
 ```python
-pip install pandas tqdm xgboost
+pip install httpimport pandas tqdm xgboost
 ```
 
 ## Importing
